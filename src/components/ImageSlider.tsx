@@ -14,43 +14,43 @@ import {
 const SLIDES = [
   {
     id: 1,
-    title: "App de Delivery & Menú Digital",
-    subtitle: "Ideal para Restaurantes y Locales de Comida",
-    description: "Toma pedidos directo de tus clientes con geolocalización, cálculo de despacho automatizado y envío directo a tu cocina y WhatsApp. Adiós a las comisiones del 30% de apps terceras.",
-    image: "/src/assets/images/business_app_delivery_1783060882200.jpg",
-    tags: ["WhatsApp Multiagente", "Pasarela de Pago", "GPS Real-time", "Menú Auto-gestionable"],
-    badge: "Gastronomía",
-    accentColor: "from-amber-500/20 to-orange-500/20 text-orange-400 border-orange-500/30"
+    title: "E-Commerce & Catálogo de Modas",
+    subtitle: "Potencia tu Tienda de Retail y Ventas Directas",
+    description: "Una vitrina digital interactiva ultrarrápida. Los usuarios añaden productos al carro de compras, eligen tallas, colores y concretan la compra mediante un flujo optimizado por chat o Webpay.",
+    image: "https://i.ibb.co/whsPGyGL/close-up-person-doing-online-shopping.jpg",
+    tags: ["Gestión de Inventario", "Filtros de Talla/Color", "Checkout Express", "Cupones de Descuento"],
+    badge: "E-Commerce",
+    accentColor: "from-blue-500/20 to-indigo-500/20 text-indigo-400 border-indigo-500/30"
   },
   {
     id: 2,
     title: "E-Commerce & Catálogo de Modas",
     subtitle: "Potencia tu Tienda de Retail y Ventas Directas",
     description: "Una vitrina digital interactiva ultrarrápida. Los usuarios añaden productos al carro de compras, eligen tallas, colores y concretan la compra mediante un flujo optimizado por chat o Webpay.",
-    image: "/src/assets/images/business_app_retail_1783060891823.jpg",
+    image: "https://i.ibb.co/WThh9Cb/wmremove-transformed-3.png",
     tags: ["Gestión de Inventario", "Filtros de Talla/Color", "Checkout Express", "Cupones de Descuento"],
     badge: "E-Commerce",
     accentColor: "from-blue-500/20 to-indigo-500/20 text-indigo-400 border-indigo-500/30"
   },
   {
     id: 3,
-    title: "Plataforma de Reservas & Turnos",
-    subtitle: "Para Centros de Estética, Clínicas y Barberías",
-    description: "Permite a tus clientes agendar turnos disponibles de forma autónoma las 24 horas del día. Envía recordatorios de asistencia automáticos y reduce las inasistencias a cero.",
-    image: "/src/assets/images/business_app_booking_1783060903033.jpg",
-    tags: ["Calendario Interactivo", "Aviso Automatizado", "Seña de Reserva", "Asignación de Staff"],
-    badge: "Agendamiento",
-    accentColor: "from-emerald-500/20 to-teal-500/20 text-emerald-400 border-emerald-500/30"
+    title: "E-Commerce & Catálogo de Modas",
+    subtitle: "Potencia tu Tienda de Retail y Ventas Directas",
+    description: "Una vitrina digital interactiva ultrarrápida. Los usuarios añaden productos al carro de compras, eligen tallas, colores y concretan la compra mediante un flujo optimizado por chat o Webpay.",
+    image: "https://i.ibb.co/Mk9zyMBF/wmremove-transformed-2-2.png",
+    tags: ["Gestión de Inventario", "Filtros de Talla/Color", "Checkout Express", "Cupones de Descuento"],
+    badge: "E-Commerce",
+    accentColor: "from-blue-500/20 to-indigo-500/20 text-indigo-400 border-indigo-500/30"
   },
   {
     id: 4,
-    title: "Dashboard de Administración SaaS",
-    subtitle: "Métricas en Tiempo Real de tu Empresa",
-    description: "Toma decisiones basadas en datos. Gráficos interactivos de ingresos mensuales, niveles de inventario, rendimiento de vendedores y panel de analíticas avanzadas integradas.",
-    image: "/src/assets/images/business_app_dashboard_1783060913029.jpg",
-    tags: ["Gráficos Interactivos", "Exportación PDF/Excel", "Roles y Permisos", "Métricas Avanzadas"],
-    badge: "Gestión Interna",
-    accentColor: "from-violet-500/20 to-purple-500/20 text-purple-400 border-purple-500/30"
+    title: "E-Commerce & Catálogo de Modas",
+    subtitle: "Potencia tu Tienda de Retail y Ventas Directas",
+    description: "Una vitrina digital interactiva ultrarrápida. Los usuarios añaden productos al carro de compras, eligen tallas, colores y concretan la compra mediante un flujo optimizado por chat o Webpay.",
+    image: "https://i.ibb.co/M5ZPHXh6/wmremove-transformed-1-1.png",
+    tags: ["Gestión de Inventario", "Filtros de Talla/Color", "Checkout Express", "Cupones de Descuento"],
+    badge: "E-Commerce",
+    accentColor: "from-blue-500/20 to-indigo-500/20 text-indigo-400 border-indigo-500/30"
   }
 ];
 
