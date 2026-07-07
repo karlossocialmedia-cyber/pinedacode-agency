@@ -31,7 +31,8 @@ export default function Footer({ onNavigate }: FooterProps) {
               <img
                 src="/image_931db897_(1)-Photoroom.png"
                 alt="ADPIEN Logo"
-                className="h-8 w-8 object-contain"
+                className="object-contain"
+                style={{ width: '40px', height: '40px' }}
               />
               <span className="font-display font-extrabold text-xl tracking-tight text-white">
                 AD<span className="text-purple-500 drop-shadow-[0_0_8px_rgba(168,85,247,0.6)]">PIEN</span>

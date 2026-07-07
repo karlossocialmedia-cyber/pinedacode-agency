@@ -42,7 +42,8 @@ export default function Navbar({ onNavigate }: NavbarProps) {
             <img
               src="/image_931db897_(1)-Photoroom.png"
               alt="ADPIEN Logo"
-              className="h-9 w-9 object-contain group-hover:scale-110 transition-transform duration-300"
+              className="object-contain group-hover:scale-110 transition-transform duration-300"
+              style={{ width: '45px', height: '45px' }}
             />
             <span className="font-display font-extrabold text-2xl tracking-tight text-white">
               AD<span className="text-purple-500 drop-shadow-[0_0_8px_rgba(168,85,247,0.6)]">PIEN</span>
