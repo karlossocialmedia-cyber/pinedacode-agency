@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Code2, Menu, X, MessageCircle, ShoppingBag, Calendar, Utensils, Download, Cpu, HelpCircle } from 'lucide-react';
+import { Menu, X, MessageCircle, ShoppingBag, Calendar, Utensils, Download, Cpu, Circle as HelpCircle } from 'lucide-react';
 
 interface NavbarProps {
   onNavigate: (sectionId: string) => void;
@@ -34,14 +34,16 @@ export default function Navbar({ onNavigate }: NavbarProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div 
-            className="flex items-center gap-2 cursor-pointer group" 
+          <div
+            className="flex items-center gap-2 cursor-pointer group"
             onClick={() => handleItemClick('inicio')}
             id="nav-logo"
           >
-            <div className="bg-electric-blue p-2 rounded-lg text-white group-hover:rotate-12 transition-transform duration-300 shadow-lg shadow-electric-blue/30">
-              <Code2 className="h-6 w-6" />
-            </div>
+            <img
+              src="/image_931db897_(1)-Photoroom.png"
+              alt="ADPIEN Logo"
+              className="h-9 w-9 object-contain group-hover:scale-110 transition-transform duration-300"
+            />
             <span className="font-display font-extrabold text-2xl tracking-tight text-white">
               AD<span className="text-purple-500 drop-shadow-[0_0_8px_rgba(168,85,247,0.6)]">PIEN</span>
             </span>
