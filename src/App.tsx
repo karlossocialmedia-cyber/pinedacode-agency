@@ -1,5 +1,6 @@
-import React from 'react';
-import Navbar from './components/Navbar';
+import React, { useEffect } from 'react';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import NavbarPublico from './components/NavbarPublico';
 import Hero from './components/Hero';
 import ImageSlider from './components/ImageSlider';
 import Process from './components/Process';
@@ -11,7 +12,26 @@ import DigitalProducts from './components/DigitalProducts';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 
-export default function App() {
+// Import our 6 independent B2B public pages
+import AdsPienImprenta from './pages/public/AdsPienImprenta';
+import AdpiMarket from './pages/public/AdpiMarket';
+import AdpiRest from './pages/public/AdpiRest';
+import Adfood from './pages/public/Adfood';
+import AdpiGar from './pages/public/AdpiGar';
+import AdpiWear from './pages/public/AdpiWear';
+
+// ScrollToTop helper to reset window scroll position on route transitions
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
+function LandingPage() {
   const handleNavigate = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -28,7 +48,7 @@ export default function App() {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[400px] bg-electric-blue/5 rounded-full blur-[140px] pointer-events-none z-0"></div>
 
       {/* Navigation Header */}
-      <Navbar onNavigate={handleNavigate} />
+      <NavbarPublico />
 
       {/* Sections Wrapper */}
       <main className="flex-1 relative z-10">
@@ -65,5 +85,22 @@ export default function App() {
       {/* Footer Details */}
       <Footer onNavigate={handleNavigate} />
     </div>
+  );
+}
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/adspien-imprenta" element={<AdsPienImprenta />} />
+        <Route path="/adpimarket" element={<AdpiMarket />} />
+        <Route path="/adpirest" element={<AdpiRest />} />
+        <Route path="/adfood" element={<Adfood />} />
+        <Route path="/adpigar" element={<AdpiGar />} />
+        <Route path="/adpiwear" element={<AdpiWear />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
